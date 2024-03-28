@@ -1,1 +1,69 @@
-/* место для вашего кода */
+:root {
+    --img-cover: url("../images/cover.jpg")
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 45% 148px auto;
+    grid-template-rows: 105px;
+    place-items: center;
+    max-width: 1052px;
+    max-height: 105px;
+    margin-top: 92px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav__menu {
+    display: flex;
+    justify-self: center;
+    line-height: 21.13px;
+    max-width: 391.48px;
+    list-style: circle;
+    gap: 33px;
+}
+
+.nav__menu-home {
+    list-style: none;
+}
+
+.header__logo {
+    justify-self: center;
+    height: 105px;
+    width: 148px;
+}
+
+.header__contacts {
+    justify-self: right;
+    max-width: 240.52px;
+    line-height: 24.3px;
+}
+
+.contacts__info {
+    text-decoration: underline;
+}
+
+.main {
+    margin-top: 96px;
+}
+
+.cover {
+    max-width: 1100px;
+    max-height: 757px;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), var(--img-cover);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover__title {
+    width: 1000px;
+    height: 355px;
+}
+
+.cover__title-text {
+    color: black;
+}
