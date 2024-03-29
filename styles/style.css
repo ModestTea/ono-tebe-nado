@@ -21,8 +21,8 @@ ul {
 .nav__menu {
     display: flex;
     justify-self: center;
-    line-height: 21.13px;
-    max-width: 391.48px;
+    line-height: 21px;
+    max-width: 391px;
     list-style: circle;
     gap: 33px;
 }
@@ -39,8 +39,8 @@ ul {
 
 .header__contacts {
     justify-self: right;
-    max-width: 240.52px;
-    line-height: 24.3px;
+    max-width: 240px;
+    line-height: 24px;
 }
 
 .contacts__info {
@@ -52,18 +52,52 @@ ul {
 }
 
 .cover {
-    max-width: 1100px;
-    max-height: 757px;
+    width: 1100px;
+    height: 757px;
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), var(--img-cover);
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
 }
 
 .cover__title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
     width: 1000px;
     height: 355px;
+    font-weight: 700px;
+    font-size: 100px;
+    line-height: 100px;
 }
 
-.cover__title-text {
-    color: black;
+.cover__title-firstword {
+    align-self: flex-start;
+    line-height: 115px;
+    letter-spacing: 30px;
+}
+
+.cover__title-secondword {
+
+}
+
+.cover__title-thirdword {
+    align-self: flex-end;
+    letter-spacing: 60px;
+}
+
+.first {
+    letter-spacing: 60px;
+}
+
+.second {
+    letter-spacing: 60px;
+}
+
+.third {
+    letter-spacing: 30px;
+}
+
+.cover__subline {
 }
