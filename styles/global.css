@@ -30,6 +30,13 @@ a {
   color: inherit;
 }
 
+input {
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 img {
   width: 100%;
 }

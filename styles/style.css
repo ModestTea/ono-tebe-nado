@@ -3,6 +3,9 @@
     --img-card-1: url("../images/card-lot-01.jpg");
     --img-card-2: url("../images/card-lot-02.jpg");
     --img-card-3: url("../images/card-lot-03.jpg");
+    --img-social-yt: url("../images/yt.svg");
+    --img-social-vk: url("../images/vk.svg");
+    --img-social-pinterest: url("../images/pinterest.svg");
 }
 
 ul {
@@ -291,4 +294,63 @@ ul {
 
 .column-top {
     padding-right: 5px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    margin: 180px auto auto;
+    max-width: 1000px;
+    width: 100%;
+    height: 98px;
+}
+
+.footer__contacts {
+    justify-self: left;
+    max-width: 241px;
+    width: 100%;
+    height: 98px;
+}
+
+.footer__menu {
+    justify-self: center;
+    text-align: center;
+    max-width: 149px;
+    width: 100%;
+    height: 64px;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    justify-self: right;
+    gap: 48px;
+    max-width: 240px;
+    width: 100%;
+    height: 48px;
+}
+
+.youtube {
+    background: var(--img-social-yt) no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.vk {
+    background: var(--img-social-vk) no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.pinterest {
+    background: var(--img-social-pinterest) no-repeat;
+    width: 48px;
+    height: 48px;
 }
