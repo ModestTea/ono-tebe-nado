@@ -1,1 +1,1 @@
-https://github.com/ModestTea/ono-tebe-nado
+https://github.com/ModestTea/ono-tebe-nado.git
