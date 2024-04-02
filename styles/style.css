@@ -34,13 +34,6 @@
 
 .nav__menu-home {
     list-style: none;
-    text-decoration: none;
-}
-
-.nav__menu-link {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
 }
 
 .header__logo {
@@ -51,16 +44,13 @@
 
 .header__contacts {
     justify-self: right;
+}
+
+.address {
     max-width: 240px;
     width: 100%;
     min-height: 98px;
     line-height: 24px;
-}
-
-.contacts__info {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
 }
 
 .main {
@@ -101,7 +91,7 @@
     max-width: 1000px;
     width: 100%;
     min-height: 355px;
-    padding-top: 40px;
+    padding-top: 85px;
     z-index: 2;
 }
 
@@ -178,10 +168,12 @@
 
 .lots__cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     max-width: 1052px;
     width: 100%;
     min-height: 563px;
+    height: 100%;
     color: var(--white);
 }
 
@@ -190,10 +182,10 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    flex-grow: 1;
     position: relative;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
+    height: 100%;
     padding: 51px 0 48px 0;
 }
 
@@ -215,9 +207,6 @@
 }
 
 .card-title {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
     text-transform: uppercase;
     text-align: left;
     line-height: 27px;
@@ -234,16 +223,13 @@
 
 .lots__more {
     padding-left: 40px;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
     line-height: 24px;
     text-align: left;
 }
 
 .about {
     display: grid;
-    grid-template-columns: 334px 693px;
+    grid-template-columns: 334px max-content;
     grid-template-rows: 283px min-content;
     column-gap: 25px;
     max-width: 1052px;
@@ -305,10 +291,6 @@
 
 .footer__contacts {
     justify-self: left;
-    max-width: 240px;
-    width: 100%;
-    min-height: 98px;
-    line-height: 24px;
 }
 
 .footer__menu {
@@ -317,12 +299,6 @@
     max-width: 149px;
     width: 100%;
     min-height: 64px;
-}
-
-.footer__menu-link {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
 }
 
 .footer__social {
@@ -335,19 +311,15 @@
     min-height: 48px;
 }
 
-.youtube {
+.social-logo {
     width: 48px;
     height: 48px;
 }
 
-.vk {
-    width: 48px;
-    height: 48px;
-}
-
-.pinterest {
-    width: 48px;
-    height: 48px;
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
 }
 
 .text_regular {

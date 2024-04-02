@@ -14,16 +14,16 @@
     <nav class="header__nav">
         <ul class="nav__menu">
             <li class="nav__menu-home"><a>главная</a></li>
-            <li class="nav__menu-link"><a href="#section-lots">посмотреть лоты</a></li>
-            <li class="nav__menu-link"><a href="#about-auction">об аукционе</a></li>
+            <li class="nav__menu-link underline"><a href="#section-lots">посмотреть лоты</a></li>
+            <li class="nav__menu-link underline"><a href="#about-auction">об аукционе</a></li>
         </ul>
     </nav>
     <div class="header__logo">
         <a><img src="images/logo-black.svg" alt="логотип аукциона Оно тебе надо." loading="lazy"></a>
     </div>
-    <ul class="address header__contacts">
-        <li class="contacts__info"><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li class="contacts__info"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
+    <ul class="header__contacts address">
+        <li class="contacts__info underline"><a href="tel:+99995555555">+9 999 555 5555</a></li>
+        <li class="contacts__info underline"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
         <li class="contacts__adress"><p>наб. Принсенграхт 263- 265, Амстердам</p></li>
     </ul>
 </header>
@@ -41,20 +41,22 @@
     <section class="lots" id="section-lots">
         <h2 class="lots__title text_bold font_size-40">Лоты</h2>
         <ul class="lots__cards">
-            <li>
+            <li><a href="#">
                 <article class="lots__cards__card card-1 card-background">
                     <div class="overlay"></div>
-                    <h3 class="card-title text_bold font_size-22">Фильм режиссёра, который бросил киношколу</h3>
+                    <h3 class="card-title underline text_bold font_size-22">Фильм режиссёра, который бросил
+                        киношколу</h3>
                     <p class="card-text text_regular font_size-20">Не просто бросил, а ушёл с первой лекции. Какой была
                         бы
                         ваша ставка,
                         если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                 </article>
+            </a>
             </li>
-            <li>
+            <li><a href="#">
                 <article class="lots__cards__card card-2 card-background">
                     <div class="overlay"></div>
-                    <h3 class="card-title text_bold font_size-22">Книга, где описан один скучный день из жизни
+                    <h3 class="card-title underline text_bold font_size-22">Книга, где описан один скучный день из жизни
                         рекламного
                         агента</h3>
                     <p class="card-text text_regular font_size-20">Объёмом почти в тысячу страниц. Иногда без знаков
@@ -65,11 +67,13 @@
                         И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                         Джойса?</p>
                 </article>
+            </a>
             </li>
-            <li>
+            <li><a href="#">
                 <article class="lots__cards__card card-3 card-background">
                     <div class="overlay"></div>
-                    <h3 class="card-title text_bold font_size-22">Картина, которую повторит даже 5-летний сын маминой
+                    <h3 class="card-title underline text_bold font_size-22">Картина, которую повторит даже 5-летний сын
+                        маминой
                         подруги</h3>
                     <p class="card-text text_regular font_size-20">Ну действительно, там линия, тут кружочек, а здесь и
                         вовсе что-то похожее на
@@ -78,9 +82,10 @@
                         одна
                         из революционных работ Кандинского?</p>
                 </article>
+            </a>
             </li>
         </ul>
-        <a class="lots__more text_regular font_size-20" href="#">посмотреть больше</a>
+        <a class="lots__more underline text_regular font_size-20" href="#">посмотреть больше</a>
     </section>
     <section class="about" id="about-auction">
         <div class="about__logo">
@@ -104,20 +109,22 @@
     </section>
 </main>
 <footer class="footer text_regular text_size-18">
-    <ul class="address footer__contacts">
-        <li class="contacts__info"><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li class="contacts__info"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
-        <li class="contacts__adress"><p>наб. Принсенграхт 263- 265, Амстердам</p></li>
+    <ul class="footer__contacts address">
+        <li class="contacts__info underline"><a href="tel:+99995555555">+9 999 555 5555</a></li>
+        <li class="contacts__info underline"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
+        <li class="contacts__address"><p>наб. Принсенграхт 263- 265, Амстердам</p></li>
     </ul>
     <ul class="footer__menu">
         <li class="footer__menu-home"><a href="#">главная</a></li>
-        <li class="footer__menu-link"><a href="#section-lots">посмотреть лоты</a></li>
-        <li class="footer__menu-link"><a href="#about-auction">об аукционе</a></li>
+        <li class="footer__menu-link underline"><a href="#section-lots">посмотреть лоты</a></li>
+        <li class="footer__menu-link underline"><a href="#about-auction">об аукционе</a></li>
     </ul>
     <div class="footer__social">
-        <a class="youtube" href="#"><img src="images/yt.svg" alt="youtube." loading="lazy"></a>
-        <a class="vk" href="#"><img src="images/vk.svg" alt="vkontakte." loading="lazy"></a>
-        <a class="pinterest" href="#"><img src="images/pinterest.svg" alt="pinterest." loading="lazy"></a>
+        <a class="footer__social-youtube social-logo" href="#"><img src="images/yt.svg" alt="youtube."
+                                                                    loading="lazy"></a>
+        <a class="footer__social-vk social-logo" href="#"><img src="images/vk.svg" alt="vkontakte." loading="lazy"></a>
+        <a class="footer__social-pinterest social-logo" href="#"><img src="images/pinterest.svg" alt="pinterest."
+                                                                      loading="lazy"></a>
     </div>
 </footer>
 </body>
