@@ -5,9 +5,6 @@
     --img-card-1: url("../images/card-lot-01.jpg");
     --img-card-2: url("../images/card-lot-02.jpg");
     --img-card-3: url("../images/card-lot-03.jpg");
-    --img-social-yt: url("../images/yt.svg");
-    --img-social-vk: url("../images/vk.svg");
-    --img-social-pinterest: url("../images/pinterest.svg");
 }
 
 .header {
@@ -77,10 +74,20 @@
     max-width: 1100px;
     width: 100%;
     min-height: 757px;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), var(--img-cover);
+    position: relative;
+    background: var(--img-cover);
     background-size: cover;
     background-position: center;
     color: var(--white);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 .cover__title {
@@ -95,6 +102,7 @@
     width: 100%;
     min-height: 355px;
     padding-top: 40px;
+    z-index: 2;
 }
 
 .cover__title-firstword {
@@ -118,15 +126,11 @@
     letter-spacing: 60px;
 }
 
-.first {
+.first-spacing {
     letter-spacing: 60px;
 }
 
-.second {
-    letter-spacing: 60px;
-}
-
-.third {
+.second-spacing {
     letter-spacing: 30px;
 }
 
@@ -138,6 +142,7 @@
     line-height: 28px;
     text-transform: uppercase;
     word-spacing: 18px;
+    z-index: 2;
 }
 
 .cover__button {
@@ -150,7 +155,9 @@
     line-height: 26px;
     color: var(--white);
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .lots {
@@ -183,21 +190,23 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    flex-grow: 1;
+    position: relative;
     width: 334px;
     height: 563px;
     padding: 51px 0 48px 0;
 }
 
 .card-1 {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), var(--img-card-1);
+    background: var(--img-card-1);
 }
 
 .card-2 {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), var(--img-card-2);
+    background: var(--img-card-2);
 }
 
 .card-3 {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), var(--img-card-3);
+    background: var(--img-card-3);
 }
 
 .card-background {
@@ -213,12 +222,14 @@
     text-align: left;
     line-height: 27px;
     width: 254px;
+    z-index: 2;
 }
 
 .card-text {
     text-align: left;
     line-height: 24px;
     width: 254px;
+    z-index: 2;
 }
 
 .lots__more {
@@ -297,6 +308,7 @@
     max-width: 240px;
     width: 100%;
     min-height: 98px;
+    line-height: 24px;
 }
 
 .footer__menu {
@@ -324,19 +336,16 @@
 }
 
 .youtube {
-    background: var(--img-social-yt) no-repeat;
     width: 48px;
     height: 48px;
 }
 
 .vk {
-    background: var(--img-social-vk) no-repeat;
     width: 48px;
     height: 48px;
 }
 
 .pinterest {
-    background: var(--img-social-pinterest) no-repeat;
     width: 48px;
     height: 48px;
 }

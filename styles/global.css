@@ -28,13 +28,7 @@ blockquote {
 
 a {
   color: inherit;
-}
-
-button {
-  border: none;
-  color: inherit;
-  background-color: inherit;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 ul {
